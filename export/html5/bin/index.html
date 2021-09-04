@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>LD48</title>
+	
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	
+	
+	<link rel="shortcut icon" type="image/png" href="./favicon.png">
+	
+	
+	<script type="text/javascript" src="./LD48.js"></script>
+	
+	<script>
+		window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, { capture: false, passive: false });
+		if (typeof window.devicePixelRatio != 'undefined' && window.devicePixelRatio > 2) {
+			var meta = document.getElementById ("viewport");
+			meta.setAttribute ('content', 'width=device-width, initial-scale=' + (2 / window.devicePixelRatio) + ', user-scalable=no');
+		}
+	</script>
+	
+	<style>
+		html,body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+		#openfl-content { background: #000000; width: 640px; height: 480px; }
+		@font-face {
+			font-family: '8-bit HUD Regular';
+			src: url('assets/data/8BitHud.eot?#iefix') format('embedded-opentype'),
+			url('assets/data/8BitHud.woff') format('woff'),
+			url('assets/data/8BitHud.ttf') format('truetype'),
+			url('assets/data/8BitHud.svg#8-bit%20HUD%20Regular') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: '8x8BoldWideMono';
+			src: url('assets/data/8x8CastPixel.eot?#iefix') format('embedded-opentype'),
+			url('assets/data/8x8CastPixel.woff') format('woff'),
+			url('assets/data/8x8CastPixel.ttf') format('truetype'),
+			url('assets/data/8x8CastPixel.svg#8x8BoldWideMono') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'stylish6x5';
+			src: url('assets/data/stylish6x5.eot?#iefix') format('embedded-opentype'),
+			url('assets/data/stylish6x5.woff') format('woff'),
+			url('assets/data/stylish6x5.ttf') format('truetype'),
+			url('assets/data/stylish6x5.svg#stylish6x5') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Nokia Cellphone FC Small';
+			src: url('flixel/fonts/nokiafc22.eot?#iefix') format('embedded-opentype'),
+			url('flixel/fonts/nokiafc22.woff') format('woff'),
+			url('flixel/fonts/nokiafc22.ttf') format('truetype'),
+			url('flixel/fonts/nokiafc22.svg#Nokia%20Cellphone%20FC%20Small') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Monsterrat';
+			src: url('flixel/fonts/monsterrat.eot?#iefix') format('embedded-opentype'),
+			url('flixel/fonts/monsterrat.woff') format('woff'),
+			url('flixel/fonts/monsterrat.ttf') format('truetype'),
+			url('flixel/fonts/monsterrat.svg#Monsterrat') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+	</style>
+	
+</head>
+<body>
+	
+	<noscript>This webpage makes extensive use of JavaScript. Please enable JavaScript in your web browser to view this page.</noscript>
+	
+	<div id="openfl-content"></div>
+	
+	<script type="text/javascript">
+		lime.embed ("LD48", "openfl-content", 640, 480, { parameters: {} });
+	</script>
+	
+</body>
+</html>
