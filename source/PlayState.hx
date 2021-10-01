@@ -35,7 +35,7 @@ class PlayState extends FlxState
 
 		super.create();
 
-		// FlxG.camera.zoom = 4;
+		FlxG.camera.zoom = 1;
 		FlxG.camera.follow(player, TOPDOWN_TIGHT, 1);
 	}
 
